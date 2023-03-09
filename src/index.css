@@ -12,9 +12,8 @@ html, body {
 }
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 30px;
-  background-color: #f3ebf6;
 }
 
 #light {
@@ -35,25 +34,40 @@ html, body {
   border: 1px solid steelblue;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+#light .container {
+  border: 1px solid steelblue;
+}
+#dark .container {
+  border: 1px solid #768390;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+#light .header { color: #000 }
+#dark .header { color: #f4f4f4}
+
+#light .no-task { color: #000 }
+#dark .no-task { color: #f4f4f4 }
+
+#light footer { color: #000 }
+#dark footer { color: #f4f4f4 }
+
 .btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
   border: none;
-  padding: 10px 20px;
   margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+  color: #fff;
   font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
   font-family: inherit;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn:focus {
@@ -65,14 +79,16 @@ html, body {
 }
 
 .btn-block {
-  display: block;
   width: 100%;
+  display: block;
 }
+
+#light .btn { background: #000; }
+#dark .btn { background: #768390; }
 
 .task {
   cursor: pointer;
   padding: 10px 20px;
-  border-radius: 8px;
   margin-bottom: 18px;
   background: #f4f4f4;
   box-shadow: rgb(102 54 27 / 10%) 0px 2px 7px 0px;
@@ -101,10 +117,13 @@ html, body {
   display: block;
 }
 
+#light .form-control label { color: #000 }
+#dark .form-control label { color: #f4f4f4 }
+
 .form-control input {
   width: 100%;
-  height: 40px;
   margin: 5px;
+  height: 40px;
   padding: 3px 7px;
   font-size: 17px;
 }
@@ -125,6 +144,6 @@ html, body {
 }
 
 footer {
-  margin-top: 30px;
+  margin: 30px;
   text-align: center;
 }

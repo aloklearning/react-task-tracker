@@ -64,7 +64,7 @@ const TaskContainer = ({ tasks, setTasks }) => {
         const data = await res.json()
 
         setTasks(tasks.map((task) => (
-        task.id === id ? {...task, reminder: data.reminder} : task
+            task.id === id ? {...task, reminder: data.reminder} : task
         )))
     }
 
@@ -78,7 +78,7 @@ const TaskContainer = ({ tasks, setTasks }) => {
             {showAddTask && <AddTask onAdd={addTask} />}
             {tasks.length > 0 ? 
             <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-            : 'No Tasks To Show'}    
+            : <span className='no-task'>No Tasks To Show</span>}    
         </div>
     )
 }
