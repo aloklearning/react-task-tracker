@@ -10,8 +10,9 @@ This is a small react task tracker app bootstrapped with [Create React App](http
 
 - Ability to add the task and see the changes real time
 - Null checks, if try adding empty data
-- A live json server has been added which is connected to the client for the interactions
+- Dark-Light Mode Switch option is available.
 - Ability to delete and update the status of the task.
+- A live json server has been added which is connected to the client for the interactions
 
 ## Available Scripts
 
