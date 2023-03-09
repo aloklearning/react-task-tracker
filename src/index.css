@@ -143,7 +143,12 @@ html, body {
   height: 20px;
 }
 
+.theme-switch {
+  margin-top: 20px;
+  text-align: center;
+}
+
 footer {
-  margin: 30px;
+  margin: 10px;
   text-align: center;
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect, createContext } from 'react';
 // import About from './components/About';
 import Footer from './components/Footer';
+import DarkLightSwitch from './components/DarkLightSwitch';
 import { 
   BrowserRouter as Router, 
   Routes, 
@@ -47,6 +48,8 @@ function App() {
             />
             {/* <Route path='/about' element={<About/>} exact /> */}
           </Routes>
+
+          <DarkLightSwitch theme={theme} onToggle={toggleTheme}/>
           <Footer />
         </div>
       </ThemeContext.Provider>
