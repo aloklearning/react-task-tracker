@@ -5,6 +5,12 @@
       "day": "check",
       "reminder": false,
       "id": 1
+    },
+    {
+      "text": "Another task",
+      "day": "Day and time",
+      "reminder": false,
+      "id": 2
     }
   ]
 }
