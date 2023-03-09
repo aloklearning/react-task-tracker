@@ -4,21 +4,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f3ebf6;
 }
 
-body {
+html, body {
+  height: 100%;
   font-family: 'Poppins', sans-serif;
 }
 
+.App {
+  height: 100vh;
+  padding-top: 30px;
+  background-color: #f3ebf6;
+}
+
+#light {
+  background-color: #f3ebf6;
+}
+
+#dark {
+ background-color: #373e47;
+}
+
 .container {
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
+  margin: auto;
   padding: 30px;
+  overflow: auto;
+  max-width: 500px;
+  min-height: 300px;
   border-radius: 5px;
+  border: 1px solid steelblue;
 }
 
 .header {
