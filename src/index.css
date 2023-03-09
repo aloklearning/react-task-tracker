@@ -56,10 +56,10 @@ body {
 }
 
 .task {
-  margin: 5px;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 8px;
+  margin-bottom: 18px;
   background: #f4f4f4;
   box-shadow: rgb(102 54 27 / 10%) 0px 2px 7px 0px;
 }
