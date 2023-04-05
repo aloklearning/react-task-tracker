@@ -18,11 +18,10 @@ const TaskContainer = ({ tasks, setTasks }) => {
     // Add Task
     const addTask = async (task) => {
         // With server addition
-        const res = await fetch(
-        'http://localhost:4000/tasks', {
+        const res = await fetch('http://localhost:4000/tasks', {
             method: 'POST',
             headers: {
-            'Content-type': 'application/json'
+                'Content-type': 'application/json'
             },
             body: JSON.stringify(task)
         }
@@ -41,8 +40,8 @@ const TaskContainer = ({ tasks, setTasks }) => {
     // Delete Task
     const deleteTask = async (id) => {
         await fetch(`http://localhost:4000/tasks/${id}`, {
-        method: 'DELETE'
-        })
+            method: 'DELETE'
+        });
 
         setTasks(tasks.filter(task => task.id !== id))
     }
@@ -55,12 +54,12 @@ const TaskContainer = ({ tasks, setTasks }) => {
         // reminder to the opposite what it was before
         const updatedTask = {...taskToToggle, reminder: !taskToToggle.reminder}
         const res = await fetch(`http://localhost:4000/tasks/${id}`, {
-        method: 'PUT',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(updatedTask)
-        })
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(updatedTask)
+        });
         const data = await res.json()
 
         setTasks(tasks.map((task) => (
